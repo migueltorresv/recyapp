@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1060024538260",
+    "project_id": "recyapp-e54a8",
+    "storage_bucket": "recyapp-e54a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060024538260:android:b0f35f647c7512abec5081",
+        "android_client_info": {
+          "package_name": "com.example.recyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1060024538260-tgpm4c6igglueui6g699vfufllv1t8g3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8B3iPjz7s6X3mxOf-lg5xgr_IeIeKLGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1060024538260-tgpm4c6igglueui6g699vfufllv1t8g3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

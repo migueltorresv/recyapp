@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/perfil"
+            android:icon="@drawable/ic_mi_perfil"
+            android:title="@string/m_perfil" />
+        <item
+            android:id="@+id/nivel_puntos"
+            android:icon="@drawable/ic_mis_puntos_nivel"
+            android:title="@string/m_nivel_puntos" />
+        <item
+            android:id="@+id/escaneo_qr"
+            android:icon="@drawable/ic_escaner"
+            android:title="@string/m_escaneo_qr" />
+    </group>
+</menu>

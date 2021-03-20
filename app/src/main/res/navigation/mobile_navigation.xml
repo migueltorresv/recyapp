@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.recyapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.recyapp.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.recyapp.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/escaneo_qr"
+        android:name="com.example.recyapp.ui.escaneo.escaneo_qr"
+        android:label="@string/m_escaneo_qr"
+        tools:layout="@layout/escaneo_qr_fragment" />
+    <fragment
+        android:id="@+id/nivel_puntos"
+        android:name="com.example.recyapp.ui.nivel.nivel_puntos"
+        android:label="@string/m_nivel_puntos"
+        tools:layout="@layout/nivel_puntos_fragment" />
+    <fragment
+        android:id="@+id/perfil"
+        android:name="com.example.recyapp.ui.perfil.perfil"
+        android:label="@string/m_perfil"
+        tools:layout="@layout/perfil_fragment" />
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.example.recyapp.ui.escaneo.VideoFragment"
+        android:label="video_fragment"
+        tools:layout="@layout/video_fragment" />
+</navigation>
