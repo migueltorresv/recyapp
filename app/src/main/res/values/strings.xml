@@ -14,4 +14,7 @@
     <string name="m_escaneo_qr">Escanear código QR</string>
     <string name="m_nivel_puntos">Mi nivel y puntos obtenidos</string>
     <string name="m_perfil">Mi perfil</string>
+
+    <!-- Edit this part with your local ip address -->
+    <string name="dir_conexion">192.168.1.2</string>
 </resources>

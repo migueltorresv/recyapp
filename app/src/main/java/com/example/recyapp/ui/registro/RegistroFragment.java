@@ -62,7 +62,8 @@ public class RegistroFragment extends Fragment implements Response.Listener<JSON
     }
 
     private void cargarWebService() {
-        String url = "http://192.168.1.3/recyapp/registroUsuario.php?nombres="+etNombre.getText().toString()+"&usuario="+
+        String ip = getString(R.string.dir_conexion);
+        String url = "http://"+ip.toString()+"/recyapp/registroUsuario.php?nombres="+etNombre.getText().toString()+"&usuario="+
                 etUsuario.getText().toString()+"&contrasenia="+etContrasenia.getText().toString();
         url.replace(" ", "%20");
         jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,url,null,this,this);

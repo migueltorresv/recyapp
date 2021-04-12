@@ -59,7 +59,8 @@ public class RegistroActivity extends AppCompatActivity implements Response.List
     }
 
     private void CargarWebService(String nombres, String usuario, String pass) {
-        String url = "http://192.168.1.3/recyapp/registroUsuario.php?nombres="+nombres+"&usuario="+
+        String ip = getString(R.string.dir_conexion);
+        String url = "http://"+ip.toString()+"/recyapp/registroUsuario.php?nombres="+nombres+"&usuario="+
                 usuario+"&contrasenia="+pass;
         url.replace(" ", "%20");
         jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,url,null,this,this);

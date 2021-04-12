@@ -61,7 +61,8 @@ public class nivel_puntos extends Fragment implements Response.Listener<JSONObje
     }
 
     private void cargarWebService(String idUsuario) {
-        String url = "http://192.168.1.3/recyapp/listarPuntosObt.php?idUsuario="+idUsuario;
+        String ip = getString(R.string.dir_conexion);
+        String url = "http://"+ip.toString()+"/recyapp/listarPuntosObt.php?idUsuario="+idUsuario;
         jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,url,null,this,this);
         requestQueue.add(jsonObjectRequest);
     }

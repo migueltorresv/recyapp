@@ -73,7 +73,8 @@ public class SignInMainActivity extends AppCompatActivity implements Response.Li
 
     public void CargarWebService(String usuario, String contrasenia) {
         try {
-            String url = "http://192.168.1.3/recyapp/consultarUsuario.php?usuario="+usuario+"&contrasenia="+contrasenia;
+            String ip = getString(R.string.dir_conexion);
+            String url = "http://"+ip.toString()+"/recyapp/consultarUsuario.php?usuario="+usuario+"&contrasenia="+contrasenia;
             jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,url,null,this,this);
             request.add(jsonObjectRequest);
         } catch (Exception e) {

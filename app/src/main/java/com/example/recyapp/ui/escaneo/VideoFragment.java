@@ -91,7 +91,8 @@ public class VideoFragment extends Fragment implements Response.Listener<JSONObj
     }
 
     private void cargarWebService(String idUsuario, String idResiduo) {
-        String url = "http://192.168.1.3/recyapp/registroPuntoObt.php?idUsuario="+idUsuario+"&Residuos_idResiduo="+idResiduo;
+        String ip = getString(R.string.dir_conexion);
+        String url = "http://"+ip.toString()+"/recyapp/registroPuntoObt.php?idUsuario="+idUsuario+"&Residuos_idResiduo="+idResiduo;
         jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,url,null,this,this);
         requestQueue.add(jsonObjectRequest);
     }
